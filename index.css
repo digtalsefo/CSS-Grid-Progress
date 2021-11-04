@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* CSS Variables */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --Light: #fff;
+    --shadow: 0 1px 5px rgb(104, 104, 104, 0.8);
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #000000;
+    margin: 30px 50px;
+    line-height: 1.4em;
+}
+
+.nav ul {
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.nav a {
+  background: #000000;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1.7fr;
+  grid-template-rows: 2fr 5fr 5fr 1fr;
+  grid-template-areas: "logo nav nav" " pic pic pic" "pic pic pic" "munch munch munch";
+  height: 150vh;
+  margin: 5em;
+}
+
+section.nav{
+ grid-area:nav;
+ background: #000000;
+ text-align: center;
+}
+
+/*section.pic {
+  grid-area: pic;
+  background: #000000;
+  background-image: url('../images/dmt.jpg');
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}*/
+
+section.logo {
+  grid-area: logo;
+  background-color: #000000;
+  background-image: url('../images/logo.jpg');
+  object-fit: cover;
+  background-position: center;
+  background-repeat: none;
+  background-size: 100% 100%;
+  position: relative;
+  border-radius: 50% 50%;
+
+}
+
+section.munch {
+  grid-area: munch;
+  background: #000000 ;
+}
+
+/*section.header {
+  grid-area: header;
+  background: #ffffff;*/
+}
+
+/*section.context {
+  grid-area: context;
+  background: #2d6acc;*/
+
+
+
