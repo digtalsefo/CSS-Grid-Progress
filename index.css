@@ -22,7 +22,7 @@ html {
 
 body {
     background: #000000;
-    margin: 30px 50px;
+    margin: 50px 50px;
     line-height: 1.4em;
 }
 
@@ -31,7 +31,7 @@ body {
   gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 
 .nav a {
@@ -41,13 +41,14 @@ body {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
+
 .grid-container{
   display: grid;
-  grid-template-columns: 0.8fr 2fr 1.7fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 2fr 5fr 5fr 1fr;
-  grid-template-areas: "logo nav nav" " pic pic pic" "pic pic pic" "munch munch munch";
+  grid-template-areas: "logo nav nav nav" "pic pic pic pic" "pic pic pic pic" "munch munch munch munch";
   height: 150vh;
   margin: 5em;
 }
@@ -58,16 +59,16 @@ section.nav{
  text-align: center;
 }
 
-/*section.pic {
+section.pic {
   grid-area: pic;
-  background: #000000;
-  background-image: url('../images/cath.png');
+  background: #ffffff;
+  background-image: url('../images/cath.png);
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
-}*/
+}
 
 section.logo {
   grid-area: logo;
